@@ -11,7 +11,7 @@ public class StudentRecords {
         int choice;
 
         while (true) {
-            System.out.println("\nSTUDENT RECORD MANAGEMENT");
+            System.out.println("STUDENT RECORD MANAGEMENT");
             System.out.println("1. Add student records");
             System.out.println("2. Remove student by roll number");
             System.out.println("3. Search student by roll number");

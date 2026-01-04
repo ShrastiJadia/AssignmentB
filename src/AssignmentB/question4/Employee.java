@@ -27,31 +27,26 @@ public class Employee {
 		break;
 	case 2:
 		refEmployeeMethods.displayAllEmployee();
-		
 		break;
 	case 3:
 		System.out.println("Enter employe id");
 		int id=sc.nextInt();
-		
 		refEmployeeMethods.searchEmployeById(id);
-		
 		break;
 	case 4:
 		System.out.println("Enter employee id");
 		int id1=sc.nextInt();
-		
 		refEmployeeMethods.removeEmployeeById(id1);
-		
 		break;
 	case 5:
 		refEmployeeMethods.demonstrateNullSupport();
-		
 		break;
 	case 6:
 		System.out.println("Program terminate");
 		System.exit(0);
 	default:
-System.out.println("invalid choice");	}
+      System.out.println("invalid choice");	
+      }
       }  
 	
 	}

@@ -9,7 +9,7 @@ public class SavingsAccount extends BankAccount {
     // Overriding method
     @Override
     public void displayDetails() {
-        System.out.println("----- Savings Account -----");
+        System.out.println(" Savings Account ");
         super.displayDetails();
     }
 }

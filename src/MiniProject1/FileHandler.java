@@ -12,7 +12,7 @@ public class FileHandler {
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(FILE_NAME))) {
             oos.writeObject(accounts);
         } catch (Exception e) {
-            System.out.println("❌ Error saving accounts.");
+            System.out.println("Error saving accounts.");
         }
     }
 

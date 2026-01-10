@@ -44,7 +44,7 @@ public class BankAccount extends BankOperations implements Serializable {
     public void withdraw(double amount) {
         if (amount > 0 && amount <= balance) {
             balance -= amount;
-            System.out.println("✅ Amount Withdrawn: " + amount);
+            System.out.println("Amount Withdrawn: " + amount);
         } else {
             System.out.println(" Insufficient balance or invalid amount.");
         }
@@ -57,7 +57,7 @@ public class BankAccount extends BankOperations implements Serializable {
 
     @Override
     public void displayDetails() {
-        System.out.println("----- Account Details -----");
+        System.out.println(" Account Details ");
         System.out.println("Account No: " + accountNumber);
         System.out.println("Name      : " + name);
         System.out.println("Balance   : " + balance);

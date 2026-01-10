@@ -29,10 +29,10 @@ public class BankApp {
                 case 5 -> displayDetails();
                 case 6 -> {
                     FileHandler.saveAccounts(accounts);
-                    System.out.println("✅ Thank you! Data Saved.");
+                    System.out.println("Thank you! Data Saved.");
                     System.exit(0);
                 }
-                default -> System.out.println("❌ Invalid option.");
+                default -> System.out.println("Invalid option.");
             }
         }
     }
@@ -62,7 +62,7 @@ public class BankApp {
 
         accounts.add(acc);
         FileHandler.saveAccounts(accounts);
-        System.out.println("✅ Account Created Successfully!");
+        System.out.println("Account Created Successfully!");
     }
 
     // Find account
@@ -102,7 +102,7 @@ public class BankApp {
             acc.withdraw(amt);
             FileHandler.saveAccounts(accounts);
         } else {
-            System.out.println("❌ Account not found.");
+            System.out.println(" Account not found.");
         }
     }
 
@@ -115,7 +115,7 @@ public class BankApp {
         if (acc != null) {
             acc.checkBalance();
         } else {
-            System.out.println("❌ Account not found.");
+            System.out.println(" Account not found.");
         }
     }
 
@@ -128,7 +128,7 @@ public class BankApp {
         if (acc != null) {
             acc.displayDetails();
         } else {
-            System.out.println("❌ Account not found.");
+            System.out.println(" Account not found.");
         }
     }
 }
